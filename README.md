@@ -9,32 +9,23 @@
 
 ### AWS Account: With permissions for Amazon Rekognition.
 
-Required Libraries
-Run the following command in your terminal to install the necessary Python packages:
+### Required Libraries
+### Run the following command in your terminal to install the necessary Python packages:
+### pip install opencv-python boto3 awscli
+### opencv-python: For real-time video capture and frame manipulation.
+### boto3: The official AWS SDK for Python, used to communicate with Rekognition and S3.
+### awscli: The command-line interface for managing your AWS account services.
 
-Bash
+## ⚙️ Step 1: AWS Configuration
+### You must link your local machine to your AWS account. Open your terminal and run:
 
-pip install opencv-python boto3 awscli
-opencv-python: For real-time video capture and frame manipulation.
+### aws configure
+### When prompted, enter your Access Key ID, Secret Access Key, and set your Default output format to json.
 
-boto3: The official AWS SDK for Python, used to communicate with Rekognition and S3.
+## 🚀 Step 2: Collection & Identity Indexing
+### AWS Rekognition uses "Collections" to store facial feature vectors.
 
-awscli: The command-line interface for managing your AWS account services.
+### Create the Collection:
 
-⚙️ Step 1: AWS Configuration
-You must link your local machine to your AWS account. Open your terminal and run:
-
-Bash
-
-aws configure
-When prompted, enter your Access Key ID, Secret Access Key, and set your Default output format to json.
-
-🚀 Step 2: Collection & Identity Indexing
-AWS Rekognition uses "Collections" to store facial feature vectors.
-
-Create the Collection:
-
-Bash
-
-aws rekognition create-collection --collection-id "authorized-users"
-Index Your Identity: Save a clear photo of yourself as me.jpg and run your registration script to add your face to the database.
+### aws rekognition create-collection --collection-id "authorized-users"
+### Index Your Identity: Save a clear photo of yourself as me.jpg and run your registration script to add your face to the database.
