@@ -1,13 +1,13 @@
-Webcam Simulation: Local Recognition Test 🎥
-📋 Overview
-This simulation bypasses the physical IoT hardware (ESP32-CAM/PIR sensor) to test the facial recognition pipeline using your computer's webcam. It validates the "Application Unit" logic of the hybrid Edge-Cloud architecture. By running this test locally, you can determine optimal confidence thresholds and verify collection indexing without incurring hardware-related troubleshooting.
+# Webcam Simulation: Local Recognition Test 🎥
+## 📋 Overview
+### This simulation bypasses the physical IoT hardware (ESP32-CAM/PIR sensor) to test the facial recognition pipeline using your computer's webcam. It validates the "Application Unit" logic of the hybrid Edge-Cloud architecture. By running this test locally, you can determine optimal confidence thresholds and verify collection indexing without incurring hardware-related troubleshooting.
 
-🛠️ Prerequisites
-Before running the simulation, ensure your local environment is prepared:
+## 🛠️ Prerequisites
+### Before running the simulation, ensure your local environment is prepared:
 
-Python 3.x: Installed on your machine.
+### Python 3.x: Installed on your machine.
 
-AWS Account: With permissions for Amazon Rekognition.
+### AWS Account: With permissions for Amazon Rekognition.
 
 Required Libraries
 Run the following command in your terminal to install the necessary Python packages:
